@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Whisper&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+      <center>
+        <div class="col-xs-12 header_div text_center" id="div_why">
+          <h2>Animal sound detection app</h2>
+          <p >
+            Note-The app responds to background noises,barking ,meowing, mooing and roaring.
+          </p>
+        </div>
+        <div class="main_div">
+            <br>
+            <button class="btn btn-primary" onclick="startClassify()">Start Detection</button>
+            <h3 id="result_name">I can detect </h3>
+            <h3 id="result_accuracy">Accuracy is </h3>
+            <br>
+            <img src="doggo.jpg" id="doggo">
+            <img src="cat.jpg" id="cat">
+            <img src="cow.png" id="cow">
+            <img src="lion.gif" id="lion">
+           
+        </div>
+        <div class="copy_right_footer">
+         Made by Param Viraj Singh Thind.
+        </div>
+      </center>
+<script src="main.js"></script>
+  </body>
